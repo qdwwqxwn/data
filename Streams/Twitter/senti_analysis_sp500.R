@@ -2,6 +2,9 @@
 # Based on: http://www.r-bloggers.com/twitter-sentiment-analysis-with-r/
 # with updated authentication, and simplified data flow and data output
 # put in a cron job and run daily at the end of the day
+# Usage: senti_analysis_sp500.R  [yyyy-mm-dd]
+# If [yyyy-mm-dd] is present, analyze 1day till the given date. 
+# If [yyyy-mm-dd] is missing, use today. 
 
 
 #connect all libraries
@@ -12,13 +15,27 @@
  library(stringr)
  library(ggplot2)
 
+ args = commandArgs(trailingOnly=TRUE)
+
+if (length(args)==0) {
+  searchdate <- format(Sys.time(), "%Y-%m-%d")
+} else { 
+  searchdate <- args[1]
+} 
+
+yesterday <- format( as.Date(searchdate)-1, "%Y-%m-%d")
+
+write(paste(searchdate, yesterday, sep='->'), file='')
+
+#quit("no")
+
 # what to search
  outdir <- "SP500" 
  searchterm <- "#SP500 OR @SP500 OR SP55" 
 
 # ---- users: do not change below ----------
- searchdate <- format(Sys.time(), "%Y-%m-%d") 
- yesterday <- format(Sys.Date()-1, "%Y-%m-%d") 
+# searchdate <- format(Sys.time(), "%Y-%m-%d") 
+# yesterday <- format(Sys.Date()-1, "%Y-%m-%d") 
  setwd("/data/Streams/Twitter") 
  reqURL <- 'https://api.twitter.com/oauth/request_token'
  accessURL <- 'https://api.twitter.com/oauth/access_token'
