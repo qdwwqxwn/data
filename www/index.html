@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Welcome to SkyInformatics Data Platform</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <style>
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 550px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+        
+    /* On small screens, set height to 'auto' for the grid */
+    @media screen and (max-width: 767px) {
+      .row.content {height: auto;} 
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse visible-xs">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">SkyInformatics</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#section1">Current page</a></li>
+        <li><a href="#section2">Age</a></li>
+        <li><a href="#section3">Gender</a></li>
+        <li><a href="#section3"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li> 
+        <li><a href="#section3"><span class="glyphicon glyphicon-log-in"></span> Log in</a></li> 
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid">
+  <div class="row content">
+
+    <div class="col-sm-3 sidenav hidden-xs">
+      <h2>SkyInformatics</h2>
+      <h4>Data Catalog</h4>
+      <div class="btn-group btn-group-vertical" data-toggle="buttons">
+        <a href="#topwin"  data-toggle="collapse" class="btn btn-primary active">
+          <input type="checkbox" checked autocomplete="off"> Dataset 1 </a> 
+        <a href="#r2c1"  data-toggle="collapse" class="btn btn-primary">
+          <input type="checkbox" autocomplete="off"> Dataset 2 </a>
+        <a href="#r3c1" data-toggle="collapse" class="btn btn-primary">
+           <input type="checkbox" autocomplete="off"> Dataset 3 </a>
+        <br> 
+      </div>
+
+      <ul class="nav nav-pills nav-stacked">
+        <li><a href="#section3"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li> 
+        <li><a href="#section3"><span class="glyphicon glyphicon-log-in"></span> Log in</a></li> 
+      </ul><br>
+    </div>
+    
+    <div class="col-sm-9">
+
+      <div class="panel panel-default">
+          <div class="panel-heading"><a href="#topwin" data-toggle="collapse">Dataset 1</a> </div> 
+          <div class="collapse in" id="topwin" style="width:650px; height:500px;"></div>
+      </div>
+
+      <!--- 2nd row ---> 
+      <div class="panel panel-default">
+          <div class="panel-heading"><a href="#r2c1" data-toggle="collapse">Dataset 2</a> </div> 
+          <div class="collapse" id="r2c1" style="width:650px; height:500px;"></div>
+     </div>
+
+      <!--- 3rd row ---> 
+      <div class="panel panel-default">
+          <div class="panel-heading"><a href="#r3c1" data-toggle="collapse">Dataset 3</a> </div> 
+          <div class="collapse" id="r3c1" style="width:650px; height:500px;"></div>
+     </div>
+
+    </div>   <!--div class="col-sm-9"-->
+
+  </div>
+</div>
+
+<script src="script/plot_topwin.js"></script>
+<script src="script/plot_r2c1.js"></script>
+<script src="script/plot_r3c1.js"></script>
+
+</body>
+</html>
+
+
