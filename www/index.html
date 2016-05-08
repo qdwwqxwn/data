@@ -51,10 +51,12 @@
 <div class="container-fluid">
   <div class="row content">
 
-    <div class="col-sm-3 sidenav hidden-xs">
+    <div class="col-sm-3 sidenav hidden-xs"> 
       <h2>SkyInformatics</h2>
-      <h4>Data Catalog</h4>
-      <div class="btn-group btn-group-vertical" data-toggle="buttons">
+      <div class="btn-group btn-group-vertical" data-toggle="buttons" data-spy="affix" data-offset-top="0">
+        <h4>Data Catalog</h4>
+
+        <!--  buttons of the same effect as the ul below
         <a href="#topwin"  data-toggle="collapse" class="btn btn-primary active">
           <input type="checkbox" checked autocomplete="off"> Dataset 1 </a> 
         <a href="#r2c1"  data-toggle="collapse" class="btn btn-primary">
@@ -62,12 +64,18 @@
         <a href="#r3c1" data-toggle="collapse" class="btn btn-primary">
            <input type="checkbox" autocomplete="off"> Dataset 3 </a>
         <br> 
+        --> 
+
+       <ul class="nav nav-pills nav-stacked"> 
+         <li><a href="#topwin"  data-toggle="collapse"><span class="glyphicon glyphicon-stats"></span> Dataset 1 </a></li> 
+         <li><a href="#r2c1"  data-toggle="collapse"><span class="glyphicon glyphicon-stats"></span> Dataset 2 </a></li> 
+         <li><a href="#r3c1"  data-toggle="collapse"><span class="glyphicon glyphicon-stats"></span> Dataset 3 </a></li> <br> 
+         <li><a href="#section3"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li> 
+         <li><a href="#section3"><span class="glyphicon glyphicon-log-in"></span> Log in</a></li> 
+       </ul><br>
+
       </div>
 
-      <ul class="nav nav-pills nav-stacked">
-        <li><a href="#section3"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li> 
-        <li><a href="#section3"><span class="glyphicon glyphicon-log-in"></span> Log in</a></li> 
-      </ul><br>
     </div>
     
     <div class="col-sm-9">
