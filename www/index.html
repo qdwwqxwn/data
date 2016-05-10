@@ -38,9 +38,10 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#section1">Current page</a></li>
-        <li><a href="#section2">Age</a></li>
-        <li><a href="#section3">Gender</a></li>
+         <li><a href="#topwin"  data-toggle="collapse"><span class="glyphicon glyphicon-stats"></span> China GDP </a></li> 
+         <li><a href="#r2c1"  data-toggle="collapse"><span class="glyphicon glyphicon-stats"></span> Dataset 2 </a></li> 
+         <li><a href="#r3c1"  data-toggle="collapse"><span class="glyphicon glyphicon-stats"></span> Dataset 3 </a></li> 
+         <li><a href="#r4c1"  data-toggle="collapse"><span class="glyphicon glyphicon-stats"></span> Dataset 4 </a></li> <br> 
         <li><a href="#section3"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li> 
         <li><a href="#section3"><span class="glyphicon glyphicon-log-in"></span> Log in</a></li> 
       </ul>
@@ -58,7 +59,7 @@
 
         <!--  buttons of the same effect as the ul below
         <a href="#topwin"  data-toggle="collapse" class="btn btn-primary active">
-          <input type="checkbox" checked autocomplete="off"> Dataset 1 </a> 
+          <input type="checkbox" checked autocomplete="off"> China GDP </a> 
         <a href="#r2c1"  data-toggle="collapse" class="btn btn-primary">
           <input type="checkbox" autocomplete="off"> Dataset 2 </a>
         <a href="#r3c1" data-toggle="collapse" class="btn btn-primary">
@@ -67,9 +68,10 @@
         --> 
 
        <ul class="nav nav-pills nav-stacked"> 
-         <li><a href="#topwin"  data-toggle="collapse"><span class="glyphicon glyphicon-stats"></span> Dataset 1 </a></li> 
+         <li><a href="#topwin"  data-toggle="collapse"><span class="glyphicon glyphicon-stats"></span> China GDP </a></li> 
          <li><a href="#r2c1"  data-toggle="collapse"><span class="glyphicon glyphicon-stats"></span> Dataset 2 </a></li> 
-         <li><a href="#r3c1"  data-toggle="collapse"><span class="glyphicon glyphicon-stats"></span> Dataset 3 </a></li> <br> 
+         <li><a href="#r3c1"  data-toggle="collapse"><span class="glyphicon glyphicon-stats"></span> Dataset 3 </a></li> 
+         <li><a href="#r4c1"  data-toggle="collapse"><span class="glyphicon glyphicon-stats"></span> Dataset 4 </a></li> <br> 
          <li><a href="#section3"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li> 
          <li><a href="#section3"><span class="glyphicon glyphicon-log-in"></span> Log in</a></li> 
        </ul><br>
@@ -81,7 +83,7 @@
     <div class="col-sm-9">
 
       <div class="panel panel-default">
-          <div class="panel-heading"><a href="#topwin" data-toggle="collapse">Dataset 1</a> </div> 
+          <div class="panel-heading"><a href="#topwin" data-toggle="collapse">China GDP</a> </div> 
           <div class="collapse in" id="topwin" style="width:650px; height:500px;"></div>
       </div>
 
@@ -97,6 +99,12 @@
           <div class="collapse" id="r3c1" style="width:650px; height:500px;"></div>
      </div>
 
+      <!--- 4th row ---> 
+      <div class="panel panel-default">
+          <div class="panel-heading"><a href="#r4c1" data-toggle="collapse">Dataset 4</a> </div> 
+          <div class="collapse" id="r4c1" style="width:650px; height:500px;"></div>
+     </div>
+
     </div>   <!--div class="col-sm-9"-->
 
   </div>
@@ -105,6 +113,7 @@
 <script src="script/plot_topwin.js"></script>
 <script src="script/plot_r2c1.js"></script>
 <script src="script/plot_r3c1.js"></script>
+<script src="script/plot_r4c1.js"></script>
 
 </body>
 </html>

@@ -1,67 +1,48 @@
 
+var GDP;
 
-var rawDataURL = 'https://raw.githubusercontent.com/plotly/datasets/master/2016-weather-data-seattle.csv';
-var xField = 'Date';
-var yField = 'Mean_TemperatureC';
+Plotly.d3.csv('/free/China-econ/GDP-growth.csv', function(err, rows){
 
-var selectorOptions = {
-    buttons: [{
-        step: 'month',
-        stepmode: 'backward',
-        count: 1,
-        label: '1m'
-    }, {
-        step: 'month',
-        stepmode: 'backward',
-        count: 6,
-        label: '6m'
-    }, {
-        step: 'year',
-        stepmode: 'todate',
-        count: 1,
-        label: 'YTD'
-    }, {
-        step: 'year',
-        stepmode: 'backward',
-        count: 1,
-        label: '1y'
-    }, {
-        step: 'all',
-    }],
-};
+    function unpack(rows, key) {
+        return rows.map(function(row) { return row[key]; });
+    }
 
-Plotly.d3.csv(rawDataURL, function(err, rawData) {
-    if(err) throw err;
-
-    var data = prepData(rawData);
-    var layout = {
-        title: 'Time series with range slider and selectors',
-        xaxis: {
-            rangeselector: selectorOptions,
-            rangeslider: {}
-        },
-        yaxis: {
-            fixedrange: true
-        }
+    var Year = unpack(rows, 'year'); 
+    var GDPrate = unpack(rows, 'Growth(%)'); 
+    GDP = unpack(rows, 'GDP($)'); 
+   
+    var trace1 = {
+        x: Year,
+        y: GDPrate, 
+        name: 'Growth Rate (%)',
+        type: 'bar'
     };
 
-    Plotly.plot('topwin', data, layout);
+    var trace2 = {
+        x: Year,
+        y: GDP, 
+        name: 'GDP ($)',
+        yaxis: 'y2', 
+        type: 'scatter'
+    };
+   
+    //console.log(GDPrate); 
+    //console.log(GDP); 
+ 
+    var data = [ trace1, trace2 ];  
+
+    var layout = {
+        title: 'China GDP and Growth Rate',
+        xaxis: {title: 'Year', dtick: 2, rorate: 45}, 
+        yaxis: {title: 'GDP Growth Rate (%)', range: [3, 15]}, 
+        yaxis2: {title: 'GDP ($)', overlaying: 'y', side: 'right', 
+        titlefont: {color: '#ff7f0e'},
+        tickfont: {color: '#ff7f0e'} 
+        }, 
+        showlegend: true
+    };
+
+    Plotly.plot('topwin', data, layout, {showLink: false, displaylogo: false});
+
 });
-
-function prepData(rawData) {
-    var x = [];
-    var y = [];
-
-    rawData.forEach(function(datum, i) {
-
-        x.push(new Date(datum[xField]));
-        y.push(datum[yField]);
-    });
-
-    return [{
-        mode: 'lines',
-        x: x,
-        y: y
-    }];
-}
 
