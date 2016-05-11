@@ -38,8 +38,15 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-         <li><a href="#topwin"  data-toggle="collapse"><span class="glyphicon glyphicon-stats"></span> China GDP </a></li> 
-         <li><a href="#r2c1"  data-toggle="collapse"><span class="glyphicon glyphicon-stats"></span> Dataset 2 </a></li> 
+         <li><a href="#china-econ"  data-toggle="collapse"><span class="glyphicon glyphicon-stats"></span> China Economy </a></li> 
+         <!-- sub menu --> 
+        <div id="china-econ" class="panel-collapse collapse">
+          <ul class="list-group">
+            <li class="list-group-item"><a href="#topwin" data-toggle="collapse">GDP</a></li>
+            <li class="list-group-item"><a href="#r2c1" data-toggle="collapse">Thermal Power Gen.</a></li>
+          </ul>
+        </div> 
+         <li><a href="#r2c1"  data-toggle="collapse"><span class="glyphicon glyphicon-stats"></span> Thermal Power </a></li> 
          <li><a href="#r3c1"  data-toggle="collapse"><span class="glyphicon glyphicon-stats"></span> Dataset 3 </a></li> 
          <li><a href="#r4c1"  data-toggle="collapse"><span class="glyphicon glyphicon-stats"></span> Dataset 4 </a></li> <br> 
         <li><a href="#section3"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li> 
@@ -61,35 +68,54 @@
         <a href="#topwin"  data-toggle="collapse" class="btn btn-primary active">
           <input type="checkbox" checked autocomplete="off"> China GDP </a> 
         <a href="#r2c1"  data-toggle="collapse" class="btn btn-primary">
-          <input type="checkbox" autocomplete="off"> Dataset 2 </a>
+          <input type="checkbox" autocomplete="off"> Thermal Power </a>
         <a href="#r3c1" data-toggle="collapse" class="btn btn-primary">
            <input type="checkbox" autocomplete="off"> Dataset 3 </a>
         <br> 
         --> 
 
        <ul class="nav nav-pills nav-stacked"> 
-         <li><a href="#topwin"  data-toggle="collapse"><span class="glyphicon glyphicon-stats"></span> China GDP </a></li> 
-         <li><a href="#r2c1"  data-toggle="collapse"><span class="glyphicon glyphicon-stats"></span> Dataset 2 </a></li> 
-         <li><a href="#r3c1"  data-toggle="collapse"><span class="glyphicon glyphicon-stats"></span> Dataset 3 </a></li> 
-         <li><a href="#r4c1"  data-toggle="collapse"><span class="glyphicon glyphicon-stats"></span> Dataset 4 </a></li> <br> 
-         <li><a href="#section3"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li> 
-         <li><a href="#section3"><span class="glyphicon glyphicon-log-in"></span> Log in</a></li> 
+       <li><a href="#china-econ2"  data-toggle="collapse"> China Economy <span class="caret"></span></a></li> 
+         <!-- sub menu --> 
+        <div id="china-econ2" class="panel-collapse collapse">
+          <ul class="list-group">
+            <li class="list-group-item"><a href="#topwin" data-toggle="collapse">
+                 <span class="glyphicon glyphicon-stats"></span> GDP</a></li>
+            <li class="list-group-item"><a href="#r2c1" data-toggle="collapse">
+                 <span class="glyphicon glyphicon-stats"></span> Thermal Power Gen.</a></li>
+          </ul>
+        </div> 
+       <li><a href="#air2"  data-toggle="collapse"> Air Pollution <span class="caret"></span></a></li> 
+         <!-- sub menu --> 
+        <div id="air2" class="panel-collapse collapse">
+          <ul class="list-group">
+            <li class="list-group-item"><a href="#topwin" data-toggle="collapse">
+                 <span class="glyphicon glyphicon-stats"></span> AOD </a></li>
+            <li class="list-group-item"><a href="#r2c1" data-toggle="collapse">
+                 <span class="glyphicon glyphicon-stats"></span> NO2 </a></li>
+            <li class="list-group-item"><a href="#r2c1" data-toggle="collapse">
+                 <span class="glyphicon glyphicon-stats"></span> SO2 </a></li>
+          </ul>
+        </div> 
+
+       <li class="divider"></li><br>
+       <li><a href="#section3"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li> 
+       <li><a href="#section3"><span class="glyphicon glyphicon-log-in"></span> Log in</a></li> 
        </ul><br>
 
       </div>
-
     </div>
     
     <div class="col-sm-9">
 
       <div class="panel panel-default">
           <div class="panel-heading"><a href="#topwin" data-toggle="collapse">China GDP</a> </div> 
-          <div class="collapse in" id="topwin" style="width:650px; height:500px;"></div>
+          <div class="collapse in" id="topwin" style="width:750px; height:500px;"></div>
       </div>
 
       <!--- 2nd row ---> 
       <div class="panel panel-default">
-          <div class="panel-heading"><a href="#r2c1" data-toggle="collapse">Dataset 2</a> </div> 
+          <div class="panel-heading"><a href="#r2c1" data-toggle="collapse">Thermal Power</a> </div> 
           <div class="collapse" id="r2c1" style="width:650px; height:500px;"></div>
      </div>
 

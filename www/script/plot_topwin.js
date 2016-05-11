@@ -33,11 +33,14 @@ Plotly.d3.csv('/free/China-econ/GDP-growth.csv', function(err, rows){
 
     var layout = {
         title: 'China GDP and Growth Rate',
-        xaxis: {title: 'Year', dtick: 2, rorate: 45}, 
-        yaxis: {title: 'GDP Growth Rate (%)', range: [3, 15]}, 
+        xaxis: {title: 'Year', dtick: 1, tickangle: 45}, 
+        yaxis: {title: 'GDP Growth Rate (%)', range: [3, 15], 
+                titlefont: {color: '#1f77b4'},
+                tickfont: {color: '#1f77b4'} 
+                }, 
         yaxis2: {title: 'GDP ($)', overlaying: 'y', side: 'right', 
-        titlefont: {color: '#ff7f0e'},
-        tickfont: {color: '#ff7f0e'} 
+                 titlefont: {color: '#ff7f0e'},
+                 tickfont: {color: '#ff7f0e'} 
         }, 
         showlegend: true
     };
