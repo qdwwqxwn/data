@@ -45,7 +45,8 @@ Plotly.d3.csv('/free/China-econ/GDP-growth.csv', function(err, rows){
         showlegend: true
     };
 
-    Plotly.plot('topwin', data, layout, {showLink: false, displaylogo: false});
+    Plotly.plot('topwin', data, layout, {showLink: false, displaylogo: false,  
+             modeBarButtonsToRemove: ['sendDataToCloud','hoverCompareCartesian']});
 
 });
 

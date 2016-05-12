@@ -30,7 +30,8 @@ Plotly.d3.csv('/free/China-econ/thermal_power_gen.csv', function(err, rows){
         showlegend: false 
     };
 
-    Plotly.plot('r2c1', data, layout, {showLink: false, displaylogo: false});
+    Plotly.plot('r2c1', data, layout, {showLink: false, displaylogo: false,
+                 modeBarButtonsToRemove: ['sendDataToCloud','hoverCompareCartesian']});
 
 });
 

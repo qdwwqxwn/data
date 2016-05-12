@@ -10,7 +10,7 @@
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
   <style>
     /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-    .row.content {height: 550px}
+    .row.content {height: 600px;}
     
     /* Set gray background color and 100% height */
     .sidenav {
@@ -59,7 +59,7 @@
 <div class="container-fluid">
   <div class="row content">
 
-    <div class="col-sm-3 sidenav hidden-xs"> 
+    <div class="col-sm-3 sidenav hidden-xs" style="height: 100%; background: #fff; min-height: 100%"> 
       <h2>SkyInformatics</h2>
       <div class="btn-group btn-group-vertical" data-toggle="buttons" data-spy="affix" data-offset-top="0">
         <h4>Data Catalog</h4>
@@ -89,11 +89,11 @@
          <!-- sub menu --> 
         <div id="air2" class="panel-collapse collapse">
           <ul class="list-group">
-            <li class="list-group-item"><a href="#topwin" data-toggle="collapse">
-                 <span class="glyphicon glyphicon-stats"></span> AOD </a></li>
-            <li class="list-group-item"><a href="#r2c1" data-toggle="collapse">
+            <!--li class="list-group-item"><a href="#topwin" data-toggle="collapse">
+                 <span class="glyphicon glyphicon-stats"></span> AOD </a></li-->
+            <li class="list-group-item"><a href="#r3c1" data-toggle="collapse">
                  <span class="glyphicon glyphicon-stats"></span> NO2 </a></li>
-            <li class="list-group-item"><a href="#r2c1" data-toggle="collapse">
+            <li class="list-group-item"><a href="#r4c1" data-toggle="collapse">
                  <span class="glyphicon glyphicon-stats"></span> SO2 </a></li>
           </ul>
         </div> 
@@ -122,13 +122,13 @@
       <!--- 3rd row ---> 
       <div class="panel panel-default">
           <div class="panel-heading"><a href="#r3c1" data-toggle="collapse">Dataset 3</a> </div> 
-          <div class="collapse" id="r3c1" style="width:650px; height:500px;"></div>
+          <div class="collapse" id="r3c1" style="width:750px; height:500px;"></div>
      </div>
 
       <!--- 4th row ---> 
       <div class="panel panel-default">
           <div class="panel-heading"><a href="#r4c1" data-toggle="collapse">Dataset 4</a> </div> 
-          <div class="collapse" id="r4c1" style="width:650px; height:500px;"></div>
+          <div class="collapse" id="r4c1" style="width:750px; height:500px;"></div>
      </div>
 
     </div>   <!--div class="col-sm-9"-->
