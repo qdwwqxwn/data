@@ -17,6 +17,10 @@ if [ "$sym" == "" ]; then
   exit -1 
 fi 
 
+cdir=`dirname $0`
+
+cd $cdir
+
 SYM=${sym^^}    # change to uppercase
 
 wget -O ${SYM}_raw.csv http://chart.finance.yahoo.com/table.csv?s=$SYM\&a=0\&b=1\&c=$syear\&g=m\&ignore=.csv
