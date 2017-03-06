@@ -30,7 +30,7 @@ awk -v sym=$SYM -v OFS=, '{print sym, $0}' ${SYM}_raw.csv  > ${SYM}.csv
 
 # load to database
 
-mysql <<EOF
+mysql -udb -pallpublic <<EOF
 use FA;
 load data local infile '${SYM}.csv' into table dividends fields terminated by ',' ignore 1 rows;
 EOF

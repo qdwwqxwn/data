@@ -1,0 +1,88 @@
+--2017-03-05 13:27:01--  http://chart.finance.yahoo.com/table.csv?s=AAPL&a=0&b=1&c=1990&g=m&ignore=.csv
+Resolving chart.finance.yahoo.com (chart.finance.yahoo.com)... 69.147.82.61, 69.147.82.60, 69.147.92.11, ...
+Connecting to chart.finance.yahoo.com (chart.finance.yahoo.com)|69.147.82.61|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/csv]
+Saving to: ‘AAPL_raw.csv’
+
+     0K .......... ..........                                   893K=0.02s
+
+2017-03-05 13:27:01 (893 KB/s) - ‘AAPL_raw.csv’ saved [20764]
+
+--2017-03-05 13:27:01--  http://chart.finance.yahoo.com/table.csv?s=AAPL&a=0&b=1&c=1990&g=v&ignore=.csv
+Resolving chart.finance.yahoo.com (chart.finance.yahoo.com)... 69.147.82.60, 69.147.92.11, 69.147.92.12, ...
+Connecting to chart.finance.yahoo.com (chart.finance.yahoo.com)|69.147.82.60|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/csv]
+Saving to: ‘AAPL_raw.csv’
+
+     0K                                                         333K=0.003s
+
+2017-03-05 13:27:01 (333 KB/s) - ‘AAPL_raw.csv’ saved [875]
+
+--2017-03-05 13:27:01--  http://chart.finance.yahoo.com/table.csv?s=AKRX&a=0&b=1&c=1990&g=m&ignore=.csv
+Resolving chart.finance.yahoo.com (chart.finance.yahoo.com)... 69.147.92.11, 69.147.92.12, 69.147.82.61, ...
+Connecting to chart.finance.yahoo.com (chart.finance.yahoo.com)|69.147.92.11|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/csv]
+Saving to: ‘AKRX_raw.csv’
+
+     0K ........                                               2.93M=0.003s
+
+2017-03-05 13:27:01 (2.93 MB/s) - ‘AKRX_raw.csv’ saved [8421]
+
+--2017-03-05 13:27:01--  http://chart.finance.yahoo.com/table.csv?s=AKRX&a=0&b=1&c=1990&g=v&ignore=.csv
+Resolving chart.finance.yahoo.com (chart.finance.yahoo.com)... 69.147.92.12, 69.147.82.61, 69.147.82.60, ...
+Connecting to chart.finance.yahoo.com (chart.finance.yahoo.com)|69.147.92.12|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/csv]
+Saving to: ‘AKRX_raw.csv’
+
+     0K                                                        1.16M=0s
+
+2017-03-05 13:27:01 (1.16 MB/s) - ‘AKRX_raw.csv’ saved [15]
+
+--2017-03-05 13:27:01--  http://chart.finance.yahoo.com/table.csv?s=GPS&a=0&b=1&c=1990&g=m&ignore=.csv
+Resolving chart.finance.yahoo.com (chart.finance.yahoo.com)... 69.147.82.61, 69.147.82.60, 69.147.92.11, ...
+Connecting to chart.finance.yahoo.com (chart.finance.yahoo.com)|69.147.82.61|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/csv]
+Saving to: ‘GPS_raw.csv’
+
+     0K .......... ........                                    89.9K=0.2s
+
+2017-03-05 13:27:02 (89.9 KB/s) - ‘GPS_raw.csv’ saved [19115]
+
+--2017-03-05 13:27:02--  http://chart.finance.yahoo.com/table.csv?s=GPS&a=0&b=1&c=1990&g=v&ignore=.csv
+Resolving chart.finance.yahoo.com (chart.finance.yahoo.com)... 69.147.82.60, 69.147.92.11, 69.147.92.12, ...
+Connecting to chart.finance.yahoo.com (chart.finance.yahoo.com)|69.147.82.60|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/csv]
+Saving to: ‘GPS_raw.csv’
+
+     0K ..                                                     1.04M=0.002s
+
+2017-03-05 13:27:02 (1.04 MB/s) - ‘GPS_raw.csv’ saved [2195]
+
+--2017-03-05 13:27:02--  http://chart.finance.yahoo.com/table.csv?s=ROST&a=0&b=1&c=1990&g=m&ignore=.csv
+Resolving chart.finance.yahoo.com (chart.finance.yahoo.com)... 69.147.82.61, 69.147.92.12, 69.147.82.60, ...
+Connecting to chart.finance.yahoo.com (chart.finance.yahoo.com)|69.147.82.61|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/csv]
+Saving to: ‘ROST_raw.csv’
+
+     0K .......... .........                                    958K=0.02s
+
+2017-03-05 13:27:02 (958 KB/s) - ‘ROST_raw.csv’ saved [19483]
+
+--2017-03-05 13:27:02--  http://chart.finance.yahoo.com/table.csv?s=ROST&a=0&b=1&c=1990&g=v&ignore=.csv
+Resolving chart.finance.yahoo.com (chart.finance.yahoo.com)... 69.147.92.12, 69.147.82.60, 69.147.92.11, ...
+Connecting to chart.finance.yahoo.com (chart.finance.yahoo.com)|69.147.92.12|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/csv]
+Saving to: ‘ROST_raw.csv’
+
+     0K .                                                       928K=0.002s
+
+2017-03-05 13:27:02 (928 KB/s) - ‘ROST_raw.csv’ saved [1855]
+
