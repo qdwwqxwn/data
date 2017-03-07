@@ -1,3 +1,11 @@
+3/6/2017 update
+
+ URL now changes to: https://www.sec.gov/Archives/edgar/full-index/2015/QTR1/master.gz
+
+ updated get_masterfile.sh for run in a cron job. 
+
+ No database loading now. 
+
 
 3/14/2016
 
